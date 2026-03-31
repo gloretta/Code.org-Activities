@@ -1,0 +1,132 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Instantiate a Painter object, then use the methods in the Painter class
+     * to navigate and paint the path to the traffic cone.
+     * -----------------------------------------------------------------------------
+     */
+    Painter julia = new Painter(); //created new painter called Julia
+    
+    //turns rights
+    julia.turnLeft();
+    julia.turnLeft();
+    julia.turnLeft();
+
+    //moves to the bucket
+    julia.move();
+
+    //take paint
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+
+    //paints and moves forward
+    julia.paint("red");
+    julia.move();
+    julia.paint("red");
+    julia.move();
+    julia.paint("red");
+    julia.move();
+    julia.paint("red");
+    julia.move();
+
+    //takes paint
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+
+    //moves to the next bucket
+    julia.paint("white");
+    julia.move();
+    julia.paint("white");
+    julia.move();
+    julia.paint("white");
+    julia.turnLeft();
+    julia.move();
+    julia.paint("white");
+    julia.move();
+
+    //takes paint
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+
+    //moves and paints
+    julia.paint("red");
+    julia.move();
+    julia.paint("red");
+    julia.move();
+    julia.paint("red");
+    julia.move();
+    julia.paint("red");
+    julia.move();
+
+    //takes paint
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+
+    //paints
+    julia.paint("white");
+    julia.move();
+    julia.paint("white");
+    julia.turnLeft();
+    julia.move();
+    julia.paint("white");
+    julia.move();
+    julia.paint("white");
+    julia.move();
+
+    //takes paint
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+
+    //paints
+    julia.paint("red");
+    julia.move();
+    julia.paint("red");
+    julia.turnLeft();
+    julia.move();
+    julia.paint("red");
+    julia.move();
+    julia.paint("red");
+    julia.move();
+
+    //takes paint
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+    julia.takePaint();
+
+    //turn right
+    julia.turnLeft();
+    julia.turnLeft();
+    julia.turnLeft();
+
+    //paint
+    julia.paint("white");
+    julia.move();
+    julia.paint("white");
+    julia.move();
+    julia.paint("white");
+    
+    //turn right
+    julia.turnLeft();
+    julia.turnLeft();
+    julia.turnLeft();
+
+    //paint
+    julia.move();
+    julia.paint("white");
+    
+  }
+}
