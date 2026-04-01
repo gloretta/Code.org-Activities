@@ -1,0 +1,21 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+    public static void main(String[] args) {
+  
+    PainterPlus julia = new PainterPlus();
+
+      
+      julia.move();
+      julia.move();
+      julia.move();
+
+      julia.turnLeft();
+      julia.turnLeft();
+      julia.turnLeft();
+
+      julia.move();
+      julia.move();
+    
+  }
+}
