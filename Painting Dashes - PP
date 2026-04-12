@@ -1,0 +1,20 @@
+import org.code.neighborhood.*;
+
+public class PainterPlus extends Painter {
+
+  // Turns the Painter object to the right
+  public void turnRight() {
+    turnLeft();
+    turnLeft();
+    turnLeft();
+  }
+
+  // Paints and moves two spaces
+  public void paintLongDashes(String color) {
+    paint(color);
+    move();
+    paint(color);
+    move();
+  }
+  
+}
