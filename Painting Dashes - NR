@@ -1,0 +1,33 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    // Creates a PainterPlus object
+    PainterPlus colin = new PainterPlus();
+
+    // Moves forward until PainterPlus reaches obstacle
+    while (colin.canMove()) {
+      colin.move();
+    }
+
+    // Takes all the paint from the paint bucket
+    while (colin.isOnBucket()) {
+      colin.takePaint();
+    }
+
+    // Turns right
+    colin.turnRight();
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Call the move() and paintLongDashes() methods to move forward and paint
+     * dashed lines behind the taxes while the PainterPlus object can move forward.
+     * -----------------------------------------------------------------------------
+     */
+    while (colin.canMove()) {
+      colin.move();
+      colin.paintLongDashes("white");
+    }
+
+  }
+}
