@@ -1,0 +1,61 @@
+import org.code.neighborhood.*;
+
+public class PainterPlus extends Painter {
+
+  // Turns the Painter to the right
+  public void turnRight() {
+    turnLeft();
+    turnLeft();
+    turnLeft();
+  }
+
+  // Turns around to face the opposite direction
+  public void turnAround() {
+    turnLeft();
+    turnLeft();
+  }
+
+  // Moves forward while can move then turns right
+  public void moveTurnRight() {
+    while (canMove()) {
+      move();
+    }
+
+    turnRight();
+  }
+
+  // Takes all of the paint from a paint bucket
+  public void takeAllPaint() {
+    while (isOnBucket()) {
+      takePaint();
+    }
+  }
+
+  // Takes all of the paint from a paint bucket if on a paint bucket
+  public void takePaintIfOnBucket() {
+    if (isOnBucket()) {
+      takeAllPaint();
+    }
+  }
+
+  // Paints two spaces
+  public void paintTwice(String color) {
+    if (hasPaint()) {
+      paint(color);
+      move();
+      paint(color);
+    }
+  }
+
+  // Paints three spaces
+  public void paintThree(String color) {
+    if (hasPaint()) {
+      paint(color);
+      move();
+      paint(color);
+      move();
+      paint(color);
+    }
+  }
+  
+}
