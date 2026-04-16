@@ -1,0 +1,68 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    // Creates a PainterPlus object
+    PainterPlus amos = new PainterPlus();
+
+    // Moves, takes paint from the paint bucket, and paints the first row
+    amos.moveAndPaint("purple");
+
+    // Turns around
+    amos.turnAround();
+
+    // Moves back to the starting point then turns south
+    while (amos.isFacingWest()) {
+      amos.move();
+
+      if (amos.canMove("south")) {
+        amos.turnLeft();
+      }
+    }
+
+    // Moves forward and paints second row while PainterPlus can move
+    while (amos.canMove()) {
+      amos.move();
+
+      // Takes all of the paint from the paint bucket then paints previous space
+      if (amos.isOnBucket()) {
+        amos.takeAllPaint();
+        amos.turnAround();
+        amos.move();
+        
+        amos.paint("purple");
+        amos.turnRight();
+        amos.move();
+        amos.paint("purple");
+        amos.turnAround();
+        amos.move();
+        
+      }
+    }
+    
+    // Turns left
+    amos.turnLeft();
+
+    // Moves, takes paint from the paint bucket, and paints the third row
+    amos.moveAndPaint("purple");
+
+    // Turns right
+    amos.turnLeft();
+    amos.move();
+
+    // Moves, takes paint from the paint bucket, and paints the last row
+    amos.takeAllPaint();
+    amos.paint("purple");
+    amos.moveAndPaint("purple");
+
+    amos.turnRight();
+    amos.move();
+    amos.takeAllPaint();
+    amos.paint("purple");
+    while (amos.canMove()) {
+      amos.moveAndPaint("purple");
+    }
+    
+  }
+}
