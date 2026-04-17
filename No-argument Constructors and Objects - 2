@@ -1,0 +1,36 @@
+/*
+ * Represents a player in a game
+ */
+public class Player {
+
+  private String name;    // The name of a player
+  private int level;      // The level of a player
+
+  /* ----------------------------------- TO DO -----------------------------------
+   * ✅ Write a no-argument constructor to assign default values to the
+   * name and level instance variables.
+   * -----------------------------------------------------------------------------
+   */
+  public Player() {
+    name = "new player";
+    level = 1;
+  }
+  
+
+  /*
+   * Returns the current value assigned to name
+   */
+  public String getName() {
+    return name;
+  }
+
+  /*
+   * Returns the current value assigned to level
+   */
+  public int getLevel() {
+    return level;
+  }
+  
+}
+
+Player.java only! Looks for GameRunner.java as well!
