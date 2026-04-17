@@ -1,0 +1,21 @@
+public class GameRunner {
+  public static void main(String[] args) {
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Instantiate a Player object. Print the constructor to the console using
+     * ConstructorsHelper.printConstructors(nameOfObject), and print the values
+     * assigned to the instance variables using the methods in the Player class.
+     * -----------------------------------------------------------------------------
+     */
+    Player julia = new Player();
+
+    System.out.println(julia.getName());
+    System.out.println(julia.getLevel());
+
+
+    
+    
+  }
+}
+
+GameRunner.java only! Looks for Player.java as well!
